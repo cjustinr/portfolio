@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: $primary;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    &.show {
+        animation-name: slideDown;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .3);
+        &.top {
+            box-shadow: none;
+        }
+    }
+
+    &.hide {
+        animation-name: slideUp;
+    }
+
+    nav {
+        padding: 12px 0;
+        .menu {
+            display: flex;
+            gap: 30px;
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: max-content;
+                margin-left: auto;
+
+                li {
+                    a {
+                        font-size: 16px;
+                        color: $grayExtraLight;
+                        transition: ease-in-out .3s;
+
+                        &:hover {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+
+            .mobile-toggle-menu {
+                display: none;
+            }
+        }
+    }
+
+    
+}

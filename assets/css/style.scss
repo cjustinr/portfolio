@@ -1,0 +1,19 @@
+@import './abstract/variables';
+@import './abstract/function';
+@import './abstract/keyframes';
+
+@import './components/global';
+
+@import './components/layout/nav';
+@import './components/layout/footer';
+
+@import './components/floater-socialmedia';
+
+@import './components/sections/hero';
+@import './components/sections/experience';
+@import './components/sections/education';
+@import './components/sections/projects';
+@import './components/sections/skills';
+@import './components/sections/contact';
+
+@import './mobile/mobile';

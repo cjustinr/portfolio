@@ -1,0 +1,14 @@
+@media screen and (max-width: 830px) {
+    section.education {
+        .card-list {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+                h3 {
+                    width: auto;
+                }
+            }
+        }
+    }
+}

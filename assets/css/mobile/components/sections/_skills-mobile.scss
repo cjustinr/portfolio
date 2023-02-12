@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+    section.skills {
+        ul {
+            width: 100%;
+            li {
+                img {
+                    width: 40px;
+                    filter: none;
+                }
+            }
+        }
+    }
+}

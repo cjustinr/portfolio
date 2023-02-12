@@ -1,0 +1,75 @@
+section.experience {
+    .content {
+        position: relative;
+        display: flex;
+
+        .border-line {
+            height: 100%;
+            width: 3px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $secondary;
+        }
+
+        .card-list {
+            padding: 20px 0;
+            h4 {
+                font-size: 18px;
+                line-height: 1.2;
+                margin: 0 0 5px;
+        
+                span {
+                    font-weight: 400;
+                    border-bottom: 3px solid $secondary
+                }
+            }
+        
+            small {
+                font-size: 12px;
+            }
+            
+            ul {
+                margin-bottom: 0;
+                padding-left: 30px;
+                li {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+            
+            .card {
+                margin: 0 0 40px;
+                padding-left: 250px;
+                position: relative;
+
+                .date-range {
+                    font-weight: 600;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    
+                    
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 40px;
+                        height: 3px;
+                        background-color: $secondary;
+                    }
+                }
+        
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    
+        
+    }
+    
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 830px) {
+    section.contact {
+        .contact-wrapper {
+            flex-direction: column;
+            .separator {
+                display: none;
+            }
+
+            form {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.contact {
+        .contact-wrapper {
+            .social-content {
+                width: 100%;
+            }
+
+            form {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    section.contact {
+        .contact-wrapper {
+            .social-content ul {
+                width: auto;
+            }
+        }
+    }
+}

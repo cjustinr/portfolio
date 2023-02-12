@@ -1,0 +1,31 @@
+.floater-social-media {
+    position: fixed;
+    bottom: 74px;
+    right: 15px;
+    z-index: 9;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 13px 0;
+            line-height: 1;
+            img {
+                width: 36px;
+                height: auto;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -130px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 120px;
+            width: 3px;
+            background-color: $secondary;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 830px) {
+    section.projects {
+        .projects-list {
+            .project-item {
+                flex-direction: column;
+
+                &.right-img {
+                    flex-direction: column-reverse;
+                }
+
+                .img-container {
+                    width: 100%;
+                }
+
+                .details {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+section.hero {
+    background-color: $primary;
+
+    .details {
+        margin: auto;
+        width: 440px;
+        h1 {
+            font-size: 36px;
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            margin: 0 0 30px;
+            color: $grayExtraLight;
+            text-align: center;
+            line-height: 1.2;
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1;
+                color: $secondary;
+                text-align: left;
+            }
+        }
+
+        p {
+            color: $blueGray;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+
+            span {
+                font-size: 26px;
+                font-weight: 600;
+                color: $secondary;
+                text-align: center;
+            }
+        }
+    }
+    
+}

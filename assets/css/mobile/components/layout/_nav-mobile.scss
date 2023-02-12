@@ -1,0 +1,102 @@
+@media screen and (max-width: 767px) {
+
+    header {
+        z-index: 99;
+        &.hide, &.show {
+            animation: none;
+            transform: translateY(0%);
+        }
+        .mobile-toggle-menu {
+            width: 45px;
+            border: 1px solid $secondary;
+            padding: 0 5px;
+            margin-left: auto;
+            cursor: pointer;
+            .line {
+                margin: 7px 0;
+                height: 5px;
+                width: 100%;
+                background-color: $secondary;
+                animation-duration: .3s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                transform: rotate(0deg) translate(0,0);
+
+            }
+
+            &.active {
+                .line {
+                    &:nth-child(1) {
+                        animation-name: line1Rotate;
+                    }
+
+                    &:nth-child(2) {
+                        animation-name: fadeOut;
+                    }
+
+                    &:nth-child(3) {
+                        animation-name: line2Rotate;
+                    }
+                }
+            }
+
+            &.stanby {
+                .line {
+                    &:nth-child(1) {
+                        animation-name: line1RotateBack;
+                    }
+
+                    &:nth-child(3) {
+                        animation-name: line2RotateBack;
+                    }
+                }
+            }
+        }
+
+        nav {
+            .menu {
+                position: absolute;
+                right: 0;
+                top: 68px;
+                width: 100%;
+                background-color: $grayExtraLight;
+                height: calc(100vh - 69px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: translate(100%);
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+
+                &.show {
+                    animation-name: slideLeftShow;
+                }
+
+                &.hide {
+                    animation-name: slideLeftHide;
+                }
+
+                ul {
+                    flex-direction: column;
+                    margin: 0 auto;
+                    gap: 80px;
+
+                    li {
+                        a {
+                            font-size: 38px;
+                            padding: 12px 30px;
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .btn-resume {
+                    font-size: 43px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

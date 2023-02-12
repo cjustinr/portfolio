@@ -1,0 +1,100 @@
+section.contact {
+
+    .contact-wrapper {
+        display: flex;
+        position: relative;
+        .social-content {
+            width: 50%;
+            height: max-content;
+            margin: auto;
+            ul {
+                list-style: none;
+                width: max-content;
+                margin: auto;
+                padding: 0;
+                li {
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+    
+                    a, span {
+                        cursor: pointer;
+                        color: $black;
+                        font-size: 14px;
+                        line-break: anywhere;
+                    }
+                }
+            }
+        }
+
+        .separator {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 2px;
+            background-color: $grayExtraLight;
+        }
+        form {
+            width: calc(50% - 50px);
+            max-width: 100%;
+            margin: 0px auto 40px;
+    
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 12px;
+    
+                label {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $primary;
+                    font-family: 'Poppins';
+                }
+    
+                input, textarea {
+                    outline: none;
+                    border: 1px solid $blueGray;
+                    padding: 2px 8px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: 'Poppins';
+                    color: $primary;
+                    box-shadow: 0 0 0 0 $secondary;
+                    transition: ease-in-out .2s;
+    
+                    &:focus {
+                        border-color: $secondary;
+                        box-shadow: 0 0 0 1.5px $secondary;
+                    }
+                }
+    
+                input {
+                    height: 30px;
+                }
+    
+                textarea {
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 100px;
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+                }
+            }
+    
+            .button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
