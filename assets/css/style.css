@@ -70,13 +70,13 @@ $secondaryFade: rgba(100,255,218,0.1); */
     transform: rotate(0deg) translate(0, 0);
   }
   100% {
-    transform: rotate(37deg) translate(7px, 10px);
+    transform: rotate(37deg) translate(5px, 6px);
   }
 }
 
 @keyframes line1RotateBack {
   0% {
-    transform: rotate(37deg) translate(7px, 10px);
+    transform: rotate(37deg) translate(5px, 6px);
   }
   100% {
     transform: rotate(0deg) translate(0, 0);
@@ -88,13 +88,13 @@ $secondaryFade: rgba(100,255,218,0.1); */
     transform: rotate(0deg) translate(0, 0);
   }
   100% {
-    transform: rotate(-37deg) translate(7px, -10px);
+    transform: rotate(-37deg) translate(5px, -6px);
   }
 }
 
 @keyframes line2RotateBack {
   0% {
-    transform: rotate(-37deg) translate(7px, -10px);
+    transform: rotate(-37deg) translate(5px, -6px);
   }
   100% {
     transform: rotate(0deg) translate(0, 0);
