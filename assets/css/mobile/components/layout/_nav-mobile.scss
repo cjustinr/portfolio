@@ -57,7 +57,7 @@
             .menu {
                 position: absolute;
                 right: 0;
-                top: 68px;
+                top: 54px;
                 width: 100%;
                 background-color: $grayExtraLight;
                 height: calc(100vh - 69px);
@@ -81,11 +81,11 @@
                 ul {
                     flex-direction: column;
                     margin: 0 auto;
-                    gap: 80px;
+                    gap: 40px;
 
                     li {
                         a {
-                            font-size: 38px;
+                            font-size: 28px;
                             padding: 12px 30px;
                             color: $primary;
                         }

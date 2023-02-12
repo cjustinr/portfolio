@@ -747,7 +747,7 @@ section.contact .contact-wrapper form .button-container {
   header nav .menu {
     position: absolute;
     right: 0;
-    top: 68px;
+    top: 54px;
     width: 100%;
     background-color: #ccd6f6;
     height: calc(100vh - 69px);
@@ -769,10 +769,10 @@ section.contact .contact-wrapper form .button-container {
   header nav .menu ul {
     flex-direction: column;
     margin: 0 auto;
-    gap: 80px;
+    gap: 40px;
   }
   header nav .menu ul li a {
-    font-size: 38px;
+    font-size: 28px;
     padding: 12px 30px;
     color: #1b4752;
   }
